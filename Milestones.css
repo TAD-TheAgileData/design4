@@ -1,0 +1,424 @@
+/* ================= BASE ================= */
+.milestones-page {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  background: #f6f8fa;
+}
+
+/* ================= HERO ================= */
+.milestones-hero {
+  position: relative;
+  height: 400px;
+}
+
+.milestones-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 43, 61, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  font-size: 44px;
+}
+
+/* ================= FILTER ================= */
+.timeline-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 60px 0;
+}
+
+.timeline-filters button {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #004f6e;
+  background: transparent;
+  color: #004f6e;
+  cursor: pointer;
+}
+
+.timeline-filters button.active {
+  background: #004f6e;
+  color: #fff;
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* CENTER LINE */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #004f6e;
+  transform: translateX(-50%);
+}
+
+/* ROW */
+.timeline-row {
+  position: relative;
+  display: flex;
+  margin-bottom: 140px;
+}
+
+.timeline-row.right {
+  justify-content: flex-end;
+  padding-right: 80px;
+}
+
+.timeline-row.left {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+/* ================= YEAR DOT ================= */
+.dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #004f6e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  z-index: 10;
+  box-shadow: 0 6px 18px rgba(0, 79, 110, 0.35);
+}
+
+/* ================= ARROWS ================= */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  color: #004f6e;
+  pointer-events: none;
+}
+
+/* LEFT < */
+.arrow.left {
+  right: 68px;
+  animation: arrowLeftPulse 1.6s infinite ease-in-out;
+}
+
+/* RIGHT > */
+.arrow.right {
+  left: 68px;
+  animation: arrowRightPulse 1.6s infinite ease-in-out;
+}
+
+@keyframes arrowLeftPulse {
+  0% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(-50%) translateX(-6px); opacity: 1; }
+  100% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+}
+
+@keyframes arrowRightPulse {
+  0% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(-50%) translateX(6px); opacity: 1; }
+  100% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+}
+/* ================= PREMIUM IMAGE HOVER ================= */
+.timeline-image {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+}
+
+/* Hover effect: zoom, lift, shine */
+.timeline-image:hover {
+  transform: scale(1.08) translateY(-6px) rotateZ(0.5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.08);
+}
+
+/* Optional: overlay shine effect */
+.timeline-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.7s ease;
+}
+
+.timeline-image:hover::after {
+  left: 125%;
+}
+
+/* ================= CARD ================= */
+.timeline-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.timeline-row:hover .timeline-content {
+  transform: translateY(-6px);
+}
+
+.timeline-image {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* existing styles remain the same */
+
+/* Smooth hover effect for card */
+.timeline-row:hover .timeline-content {
+  transform: translateY(-8px) scale(1.02);
+  transition: transform 0.35s ease;
+}
+
+/* Add fade-in effect to the timeline images */
+.timeline-image {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 8px;
+  object-fit: cover;
+  /* optional subtle shadow for better depth */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+.milestones-page {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  background: #f6f8fa;
+}
+
+.milestones-hero {
+  position: relative;
+  height: 400px;
+}
+
+.milestones-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 43, 61, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  font-size: 44px;
+}
+
+.timeline-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 60px 0;
+}
+
+.timeline-filters button {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #004f6e;
+  background: transparent;
+  color: #004f6e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-filters button.active,
+.timeline-filters button:hover {
+  background: #004f6e;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #004f6e;
+  transform: translateX(-50%);
+}
+
+.timeline-row {
+  position: relative;
+  display: flex;
+  margin-bottom: 140px;
+}
+
+.timeline-row.right {
+  justify-content: flex-end;
+  padding-right: 80px;
+}
+
+.timeline-row.left {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #004f6e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  z-index: 10;
+  box-shadow: 0 6px 18px rgba(0, 79, 110, 0.35);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  color: #004f6e;
+  pointer-events: none;
+}
+
+.arrow.left {
+  right: 68px;
+  animation: arrowLeftPulse 1.6s infinite ease-in-out;
+}
+
+.arrow.right {
+  left: 68px;
+  animation: arrowRightPulse 1.6s infinite ease-in-out;
+}
+
+@keyframes arrowLeftPulse {
+  0% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(-50%) translateX(-6px); opacity: 1; }
+  100% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+}
+
+@keyframes arrowRightPulse {
+  0% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+  50% { transform: translateY(-50%) translateX(6px); opacity: 1; }
+  100% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.timeline-image {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .timeline::before { left: 26px; }
+  .timeline-row { justify-content: flex-start !important; padding-left: 80px; }
+  .dot { left: 26px; }
+  .arrow { display: none; }
+}
+
+/* Mobile adjustments remain the same */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 26px;
+  }
+
+  .timeline-row {
+    justify-content: flex-start !important;
+    padding-left: 80px;
+  }
+
+  .dot {
+    left: 26px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 26px;
+  }
+
+  .timeline-row {
+    justify-content: flex-start !important;
+    padding-left: 80px;
+  }
+
+  .dot {
+    left: 26px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
