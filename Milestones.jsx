@@ -20,44 +20,64 @@ import Temperingline from "../../assets/Images/VLT-image-1.webp";
 
 // ================= DATA =================
 const milestones = [
-  { year: "1991", title: "Stone Laying Ceremony", desc: "The foundation stone was laid, marking the beginning of our manufacturing journey.", image: foundation },
-  { year: "1992", title: "Construction Completed", desc: "Completion of the manufacturing facility and infrastructure development.", image: Construction },
-  { year: "1992", title: "Automotive Production Line Setup", desc: "Installation of the first automotive glass production line.", image: Automotiveproductive },
-  { year: "1992", title: "Design & Tooling Facility Established", desc: "In-house screen and tooling development facility commissioned.", image: Designfacility },
-  { year: "1992", title: "Domestic Sales Initiated", desc: "Commercial operations began with domestic market penetration.", image: Domestic_Sales_Initiated },
-  { year: "1993", title: "MENA Export Operations", desc: "Exports commenced across Middle East and North Africa regions.", image: MENA_Export },
-  { year: "1993", title: "DOT Certification Achieved", desc: "Received DOT certification, meeting international safety standards.", image: Certification_Achieved },
-  { year: "1993", title: "Exports to North America", desc: "Expanded exports to the USA and Canada markets.", image: ExportNAmerica },
-  { year: "1994", title: "ECE R-43 Certification", desc: "Certified under ECE R-43 automotive glass regulations.", image: ECRCertified },
-  { year: "1994", title: "European Market Entry", desc: "Exports initiated to European automotive markets.", image: Europeanmarketentry },
-  { year: "1995", title: "Japan Market Expansion", desc: "Export operations expanded into the Japanese market.", image: Japan_Market_Expansion },
-  { year: "1997", title: "Architectural Glass Line Setup", desc: "Commissioned double-glass architectural production line.", image: Architecturalglassline },
-  { year: "1998", title: "Asian Market Expansion", desc: "Export footprint extended across Asian markets.", image: expanding_into_asia },
-  { year: "1998", title: "Tempering Line Installed", desc: "Advanced glass tempering line commissioned.", image: Temperingline },
-  { year: "2003", title: "Plant Expansion", desc: "Manufacturing capacity enhanced through plant expansion.", image: heroImage },
-  { year: "2005", title: "SEF Lamination Furnace Added", desc: "Installed SEF Excon laminated glass furnace.", image: heroImage },
-  { year: "2006", title: "ISO 9001 Certification", desc: "Achieved ISO 9001 quality management certification.", image: heroImage },
-  { year: "2008", title: "Curved Glass Furnace Added", desc: "Midi furnace installed for curved glass production.", image: heroImage },
-  { year: "2010", title: "Capacity Enhancement Expansion", desc: "Major expansion to meet increasing market demand.", image: heroImage },
-  { year: "2012", title: "Architectural Line Expansion", desc: "Architectural glass line capacity further expanded.", image: heroImage },
-  { year: "2013", title: "Bus Glass Bending Furnace", desc: "Screen Max furnace installed for bus glass applications.", image: heroImage },
-  { year: "2014", title: "Tempering Furnace Setup", desc: "New tempering furnace commissioned for quality enhancement.", image: heroImage },
-  { year: "2017", title: "New Bando Line Installation", desc: "Production efficiency improved with Bando line installation.", image: heroImage },
-  { year: "2020", title: "SGCC Certification", desc: "Achieved SGCC certification for automotive safety glass." },
-  { year: "2023", title: "OEM Business Collaborations", desc: "Automotive OEM visits and collaborations initiated.", image: heroImage },
-  { year: "2023", title: "CEER Prototype Development Awarded", desc: "Awarded prototype development for P800/P700 models.", image: heroImage },
-  { year: "2023", title: "ISO 45001 & ISO 14001", desc: "Certified for occupational health, safety, and environmental management.", image: heroImage },
-  { year: "2024", title: "Polishing Machine Installation", desc: "Advanced polishing machine installed for surface finish improvement.", image: heroImage },
-  { year: "2024", title: "SNAM Prototype Development", desc: "Prototype development initiated for SNAM project.", image: heroImage },
-  { year: "2024", title: "OEM Business Discussions", desc: "Strategic discussions held with Lucid and Volvo.", image: heroImage },
   { year: "2025", title: "CEER PSA Audit Success", desc: "Achieved 89.9 score in CEER PSA audit.", image: heroImage },
   { year: "2025", title: "PT2 Sample Development", desc: "Successful development of PT2 samples for CEER project.", image: heroImage },
   { year: "2025", title: "Hyundai – HMME Discussions", desc: "Business collaboration discussions initiated with Hyundai HMME.", image: heroImage },
   { year: "2025", title: "IATF 16949 Certification Initiated", desc: "IATF 16949 certification process initiated as part of continuous quality improvement.", image: heroImage },
+
+  { year: "2024", title: "Polishing Machine Installation", desc: "Advanced polishing machine installed for surface finish improvement.", image: heroImage },
+  { year: "2024", title: "SNAM Prototype Development", desc: "Prototype development initiated for SNAM project.", image: heroImage },
+  { year: "2024", title: "OEM Business Discussions", desc: "Strategic discussions held with Lucid and Volvo.", image: heroImage },
+
+  { year: "2023", title: "OEM Business Collaborations", desc: "Automotive OEM visits and collaborations initiated.", image: heroImage },
+  { year: "2023", title: "CEER Prototype Development Awarded", desc: "Awarded prototype development for P800/P700 models.", image: heroImage },
+  { year: "2023", title: "ISO 45001 & ISO 14001", desc: "Certified for occupational health, safety, and environmental management.", image: heroImage },
+
+  { year: "2020", title: "SGCC Certification", desc: "Achieved SGCC certification for automotive safety glass." },
+
+  { year: "2017", title: "New Bando Line Installation", desc: "Production efficiency improved with Bando line installation.", image: heroImage },
+
+  { year: "2014", title: "Tempering Furnace Setup", desc: "New tempering furnace commissioned for quality enhancement.", image: heroImage },
+
+  { year: "2013", title: "Bus Glass Bending Furnace", desc: "Screen Max furnace installed for bus glass applications.", image: heroImage },
+
+  { year: "2012", title: "Architectural Line Expansion", desc: "Architectural glass line capacity further expanded.", image: heroImage },
+
+  { year: "2010", title: "Capacity Enhancement Expansion", desc: "Major expansion to meet increasing market demand.", image: heroImage },
+
+  { year: "2008", title: "Curved Glass Furnace Added", desc: "Midi furnace installed for curved glass production.", image: heroImage },
+
+  { year: "2006", title: "ISO 9001 Certification", desc: "Achieved ISO 9001 quality management certification.", image: heroImage },
+
+  { year: "2005", title: "SEF Lamination Furnace Added", desc: "Installed SEF Excon laminated glass furnace.", image: heroImage },
+
+  { year: "2003", title: "Plant Expansion", desc: "Manufacturing capacity enhanced through plant expansion.", image: heroImage },
+
+  { year: "1998", title: "Asian Market Expansion", desc: "Export footprint extended across Asian markets.", image: expanding_into_asia },
+  { year: "1998", title: "Tempering Line Installed", desc: "Advanced glass tempering line commissioned.", image: Temperingline },
+
+  { year: "1997", title: "Architectural Glass Line Setup", desc: "Commissioned double-glass architectural production line.", image: Architecturalglassline },
+
+  { year: "1995", title: "Japan Market Expansion", desc: "Export operations expanded into the Japanese market.", image: Japan_Market_Expansion },
+
+  { year: "1994", title: "ECE R-43 Certification", desc: "Certified under ECE R-43 automotive glass regulations.", image: ECRCertified },
+  { year: "1994", title: "European Market Entry", desc: "Exports initiated to European automotive markets.", image: Europeanmarketentry },
+
+  { year: "1993", title: "MENA Export Operations", desc: "Exports commenced across Middle East and North Africa regions.", image: MENA_Export },
+  { year: "1993", title: "DOT Certification Achieved", desc: "Received DOT certification, meeting international safety standards.", image: Certification_Achieved },
+  { year: "1993", title: "Exports to North America", desc: "Expanded exports to the USA and Canada markets.", image: ExportNAmerica },
+
+  { year: "1992", title: "Construction Completed", desc: "Completion of the manufacturing facility and infrastructure development.", image: Construction },
+  { year: "1992", title: "Automotive Production Line Setup", desc: "Installation of the first automotive glass production line.", image: Automotiveproductive },
+  { year: "1992", title: "Design & Tooling Facility Established", desc: "In-house screen and tooling development facility commissioned.", image: Designfacility },
+  { year: "1992", title: "Domestic Sales Initiated", desc: "Commercial operations began with domestic market penetration.", image: Domestic_Sales_Initiated },
+
+  { year: "1991", title: "Stone Laying Ceremony", desc: "The foundation stone was laid, marking the beginning of our manufacturing journey.", image: foundation },
 ];
 
+
 // ================= FILTERS =================
-const filters = [
+const filters1 = [
   { label: "All", value: "all" },
   { label: "1990s", value: "1990" },
   { label: "2000s", value: "2000" },
@@ -65,32 +85,36 @@ const filters = [
   { label: "2020s", value: "2020" },
 ];
 
-export default function Milestones() {
-  const [filter, setFilter] = useState("all");
 
-  const filteredData =
-    filter === "all"
-      ? milestones
-      : milestones.filter(
-          (m) => Math.floor(Number(m.year) / 10) * 10 === Number(filter)
+export default function Milestones() {
+  const [filter1, setFilter] = useState("all");
+const sortedMilestones = [...milestones].sort(
+    (a, b) => Number(b.year) - Number(a.year)
+  );
+
+  const filteredData1 =
+    filter1 === "all"
+      ? sortedMilestones
+      : sortedMilestones.filter(
+          (m) => Math.floor(Number(m.year) / 10) * 10 === Number(filter1)
         );
 
   return (
-    <section className="milestones-page">
+    <section className="milestones-page1">
       {/* HERO */}
-      <div className="milestones-hero">
+      <div className="milestones-hero1">
         <img src={heroImage} alt="Milestones" />
-        <div className="hero-overlay">
+        <div className="hero-overlay1">
           <h1>Our Milestones</h1>
         </div>
       </div>
 
       {/* FILTER */}
-      <div className="timeline-filters">
-        {filters.map((f) => (
+      <div className="timeline-filters1">
+        {filters1.map((f) => (
           <button
             key={f.value}
-            className={filter === f.value ? "active" : ""}
+            className={filter1 === f.value ? "active" : ""}
             onClick={() => setFilter(f.value)}
           >
             {f.label}
@@ -99,8 +123,8 @@ export default function Milestones() {
       </div>
 
       {/* TIMELINE */}
-      <div className="timeline">
-        {filteredData.map((item, index) => (
+      <div className="timeline1">
+        {filteredData1.map((item, index) => (
           <motion.div
             key={index}
             className={`timeline-row ${index % 2 === 0 ? "left" : "right"}`}
@@ -110,7 +134,7 @@ export default function Milestones() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             {/* YEAR */}
-            <span className="dot">
+            <span className="dot1">
               {item.year}
               <span className={`arrow ${index % 2 === 0 ? "left" : "right"}`}>
                 {index % 2 === 0 ? "<" : ">"}
@@ -119,18 +143,18 @@ export default function Milestones() {
 
             {/* CARD */}
             <motion.div
-              className="timeline-content"
+              className="timeline-content1"
               whileHover={{ scale: 1.02 }}
             >
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
 
               {item.image && (
-                <div className="timeline-image-wrapper">
+                <div className="timeline-image-wrapper1">
                   <motion.img
                     src={item.image}
                     alt={item.title}
-                    className="timeline-image"
+                    className="timeline-image1"
                     whileHover={{ scale: 1.08, rotateZ: 0.5 }}
                     transition={{
                       type: "spring",

@@ -1,22 +1,22 @@
 /* ================= BASE ================= */
-.milestones-page {
+.milestones-page1 {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   background: #f6f8fa;
 }
 
 /* ================= HERO ================= */
-.milestones-hero {
+.milestones-hero1 {
   position: relative;
   height: 400px;
 }
 
-.milestones-hero img {
+.milestones-hero1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero-overlay {
+.hero-overlay1 {
   position: absolute;
   inset: 0;
   background: rgba(0, 43, 61, 0.65);
@@ -25,20 +25,20 @@
   justify-content: center;
 }
 
-.hero-overlay h1 {
+.hero-overlay1 h1 {
   color: #fff;
   font-size: 44px;
 }
 
 /* ================= FILTER ================= */
-.timeline-filters {
+.timeline-filters1 {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin: 60px 0;
 }
 
-.timeline-filters button {
+.timeline-filters1 button {
   padding: 10px 18px;
   border-radius: 30px;
   border: 1px solid #004f6e;
@@ -47,13 +47,13 @@
   cursor: pointer;
 }
 
-.timeline-filters button.active {
+.timeline-filters1 button.active {
   background: #004f6e;
   color: #fff;
 }
 
 /* ================= TIMELINE ================= */
-.timeline {
+.timeline1 {
   position: relative;
   max-width: 1100px;
   margin: auto;
@@ -61,36 +61,36 @@
 }
 
 /* CENTER LINE */
-.timeline::before {
+.timeline1::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 8px;
   background: #004f6e;
   transform: translateX(-50%);
 }
 
 /* ROW */
-.timeline-row {
+.timeline1-row {
   position: relative;
   display: flex;
   margin-bottom: 140px;
 }
 
-.timeline-row.right {
+.timeline1-row.right {
   justify-content: flex-end;
   padding-right: 80px;
 }
 
-.timeline-row.left {
+.timeline1-row.left {
   justify-content: flex-start;
   padding-left: 80px;
 }
 
 /* ================= YEAR DOT ================= */
-.dot {
+.dot1 {
   position: absolute;
   left: 50%;
   top: 0;
@@ -143,7 +143,7 @@
   100% { transform: translateY(-50%) translateX(0); opacity: 0.4; }
 }
 /* ================= PREMIUM IMAGE HOVER ================= */
-.timeline-image {
+.timeline-image1 {
   width: 100%;
   margin-top: 16px;
   border-radius: 12px;
@@ -155,14 +155,14 @@
 }
 
 /* Hover effect: zoom, lift, shine */
-.timeline-image:hover {
+.timeline-image1:hover {
   transform: scale(1.08) translateY(-6px) rotateZ(0.5deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   filter: brightness(1.08);
 }
 
 /* Optional: overlay shine effect */
-.timeline-image::after {
+.timeline-image1::after {
   content: "";
   position: absolute;
   top: 0;
@@ -174,12 +174,12 @@
   transition: all 0.7s ease;
 }
 
-.timeline-image:hover::after {
+.timeline-image1:hover::after {
   left: 125%;
 }
 
 /* ================= CARD ================= */
-.timeline-content {
+.timeline-content1 {
   background: #fff;
   padding: 24px;
   border-radius: 12px;
@@ -192,7 +192,7 @@
   transform: translateY(-6px);
 }
 
-.timeline-image {
+.timeline-image1 {
   width: 100%;
   margin-top: 16px;
   border-radius: 8px;
@@ -207,7 +207,7 @@
 }
 
 /* Add fade-in effect to the timeline images */
-.timeline-image {
+.timeline-image1 {
   width: 100%;
   margin-top: 16px;
   border-radius: 8px;
@@ -215,23 +215,23 @@
   /* optional subtle shadow for better depth */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
-.milestones-page {
+.milestones-page1 {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   background: #f6f8fa;
 }
 
-.milestones-hero {
+.milestones-hero1 {
   position: relative;
   height: 400px;
 }
 
-.milestones-hero img {
+.milestones-hero1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero-overlay {
+.hero-overlay1 {
   position: absolute;
   inset: 0;
   background: rgba(0, 43, 61, 0.65);
@@ -240,19 +240,19 @@
   justify-content: center;
 }
 
-.hero-overlay h1 {
+.hero-overlay1 h1 {
   color: #fff;
   font-size: 44px;
 }
 
-.timeline-filters {
+.timeline-filters1 {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin: 60px 0;
 }
 
-.timeline-filters button {
+.timeline-filters1 button {
   padding: 10px 18px;
   border-radius: 30px;
   border: 1px solid #004f6e;
@@ -262,8 +262,8 @@
   transition: all 0.3s ease;
 }
 
-.timeline-filters button.active,
-.timeline-filters button:hover {
+.timeline-filters1 button.active,
+.timeline-filters1 button:hover {
   background: #004f6e;
   color: #fff;
 }
@@ -302,22 +302,36 @@
   padding-left: 80px;
 }
 
-.dot {
+/* ================= CENTER YEAR DOT ================= */
+.dot1 {
   position: absolute;
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
-  width: 56px;
-  height: 56px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
-  background: #004f6e;
-  color: #fff;
+
+  /* REQUIRED COLORS */
+  background: #ffffff;          /* white background */
+  color: #303E81;               /* year text color */
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 14px;
+
+  border: 2px solid #303E81;    /* optional premium outline */
   z-index: 10;
-  box-shadow: 0 6px 18px rgba(0, 79, 110, 0.35);
+
+  box-shadow: 0 6px 18px rgba(48, 62, 129, 0.25);
+}
+.timeline-row:hover .dot1 {
+  background: #303E81;
+  color: #ffffff;
+  transform: translate(-50%, -50%) scale(1.08);
+  transition: all 0.3s ease;
 }
 
 .arrow {
