@@ -1,0 +1,187 @@
+/* ================= HERO ================= */
+.mc-hero {
+  position: relative;
+  height: 360px;
+}
+
+.mc-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mc-hero-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.mc-hero-subtitle {
+  color: #ddd;
+  letter-spacing: 1px;
+}
+
+/* ================= PAGE ================= */
+.mc-container {
+  padding: 70px 0;
+}
+
+/* ================= CARD ================= */
+.mc-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+/* ================= STACK LAYOUT ================= */
+.mc-zigzag {
+  display: flex;
+  flex-direction: column; /* 🔑 image top, content below */
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= IMAGE WRAP ================= */
+.mc-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+/* IMAGE */
+.mc-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ================= BADGE ================= */
+.mc-image-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+/* ================= CONTENT ================= */
+/* ================= CONTENT ================= */
+.mc-content {
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal center */
+  justify-content: center;  /* vertical center */
+  text-align: center;
+  gap: 14px;
+}
+
+
+/* LOGO */
+.mc-logo {
+  height: 38px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TEXT */
+.mc-make {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.mc-process {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* ================= BULLETS ================= */
+.mc-desc {
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.mc-desc li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.mc-bullet-icon {
+  color: #007bff;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .mc-zigzag {
+    flex-direction: column;
+  }
+
+  .mc-image,
+  .mc-content {
+    width: 100%;
+  }
+
+  .mc-image {
+    height: 220px;
+  }
+}
+/* ================= IMAGE WRAP ================= */
+.mc-image-wrap {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+/* IMAGE */
+.mc-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= BADGE ================= */
+.mc-image-badge {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .mc-image-wrap {
+    width: 100%;
+    height: 220px;
+  }
+}
